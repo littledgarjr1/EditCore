@@ -1,68 +1,32 @@
-# Prerequisites
-*.d
+# Build folders
+build/
+build-*/
+/cmake-build-*/
+out/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
 
-# Precompiled Headers
-*.gch
-*.pch
+# Visual Studio
+.vs/
 
-# Linker files
-*.ilk
+# CLion
+.idea/
 
-# Debugger Files
-*.pdb
+# Zed
+.zed/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
+# Sublime Text
+*.sublime-workspace
 
-# Fortran module files
-*.mod
-*.smod
+# CMake presets
+CMakeUserPresets.json
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# MacOS
+.DS_Store/
 
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
-[Bb]uild/
-[Bb]uild-*/
-cmake-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
+# Other
 .cache/
+__pycache__/

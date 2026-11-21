@@ -6,11 +6,11 @@
 		"mac": "2.2081",
 		"ios": "2.2081"
 	},
-	"id": "inullexx.editcore",
-	"name": "EditCore",
+	"id": "inullexx.nullcore",
+	"name": "NullCore",
 	"version": "v1.0.0",
 	"developer": "iNullexx",
-	"description": "Makes the GD editor easier to use.",
+	"description": "A mod menu for Geometry Dash.",
 	"dependencies": {
 		"geode.node-ids": ">=v1.23.3"
 	}

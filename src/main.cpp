@@ -12,10 +12,18 @@ class $modify(NCMenuLayer, MenuLayer) {
         auto bottomMenu = this->getChildByID("bottom-menu");
         if (!bottomMenu) return true;
 
+        auto icon = CCSprite::create("nullcore-icon.png"_spr);
+        if (!icon) {
+            log::error("NullCore: icon not found");
+            return true;
+        }
+
+        icon->setScale(50.f / icon->getContentSize().width);
+
         auto button = CCMenuItemSpriteExtra::create(
-            CCSprite::createWithSpriteFrameName("GJ_likeBtn_001.png"),
+            icon,
             this,
-            menu_selector(NCMenuLayer::onButtonClick)
+            menu_selector(NCMenuLayer::onNullCore)
         );
         button->setID("nullcore-button"_spr);
 
@@ -25,11 +33,11 @@ class $modify(NCMenuLayer, MenuLayer) {
         return true;
     }
 
-    void onButtonClick(CCObject*) {
+    void onNullCore(CCObject*) {
         FLAlertLayer::create(
             "NullCore",
-            "This is just a test currently, so nothing special here.",
-            "A'ighty!"
+            "Menu coming soon.",
+            "OK"
         )->show();
     }
 };

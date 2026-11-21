@@ -1,3 +1,3 @@
-# {{ name }}
+# EditCore
 
 Edit about.md to change this
